@@ -1,0 +1,87 @@
+/* Hallmark · theme: Hum · paper: light · display: rounded-sans · accent: multi */
+:root {
+  --color-paper: oklch(97% 0.012 95);
+  --color-paper-2: oklch(94% 0.016 95);
+  --color-paper-3: oklch(91% 0.02 95);
+  --color-paper-cyan: oklch(94% 0.03 235);
+  --color-paper-coral: oklch(95% 0.025 18);
+  --color-ink: oklch(22% 0.02 250);
+  --color-ink-soft: oklch(22% 0.02 250 / 0.88);
+  --color-ink-faint: oklch(22% 0.02 250 / 0.62);
+  --color-accent: oklch(86% 0.18 95);
+  --color-accent-deep: oklch(68% 0.16 95);
+  --color-accent-cast: oklch(76% 0.2 95 / 0.45);
+  --color-accent-ink: oklch(22% 0.02 250);
+  --color-accent-2: oklch(66% 0.18 235);
+  --color-accent-2-deep: oklch(40% 0.12 235);
+  --color-accent-3: oklch(62% 0.2 18);
+  --color-accent-3-deep: oklch(46% 0.16 18);
+  --color-danger: oklch(46% 0.16 18);
+  --color-focus: oklch(40% 0.12 235);
+  --color-rule: oklch(22% 0.02 250 / 0.16);
+  --color-shadow: oklch(22% 0.02 250 / 0.12);
+  --color-clear: oklch(22% 0.02 250 / 0);
+  --color-pending: oklch(38% 0.11 235);
+
+  --font-display: "Plus Jakarta Sans", "Avenir Next", sans-serif;
+  --font-body: "Plus Jakarta Sans", "Avenir Next", sans-serif;
+  --font-outlier: "JetBrains Mono", ui-monospace, monospace;
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1.0625rem;
+  --text-lg: 1.25rem;
+  --text-xl: 1.5rem;
+  --text-2xl: 2rem;
+  --text-display: clamp(2rem, 2.2vw + 1.05rem, 3.15rem);
+  --text-stage: clamp(2.25rem, 3vw, 3.5rem);
+  --text-statement: clamp(1.85rem, 4vw, 3.15rem);
+
+  --space-3xs: 0.125rem;
+  --space-2xs: 0.25rem;
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2.5rem;
+  --space-2xl: 4rem;
+  --space-3xl: 6rem;
+  --space-4xl: 9rem;
+
+  --page-gutter: var(--space-md);
+  --shell: 72rem;
+  --banner-h: var(--space-xl);
+  --bar-h: var(--space-2xl);
+  --control-h: 3rem;
+
+  --radius-card: 1.75rem;
+  --radius-input: 0.75rem;
+  --radius-pill: 999px;
+
+  --rule-hair: 1px;
+
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in: cubic-bezier(0.7, 0, 0.84, 0);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --ease-press: cubic-bezier(0.2, 0.7, 0.3, 1);
+  --dur-micro: 120ms;
+  --dur-short: 220ms;
+  --dur-long: 420ms;
+  --dur-press: 140ms;
+  --dur-press-in: 70ms;
+
+  --shadow-btn: 0 4px 0 0 var(--color-accent-deep), 0 6px 12px -3px var(--color-accent-cast);
+  --shadow-btn-hover: 0 6px 0 0 var(--color-accent-deep), 0 12px 22px -4px var(--color-accent-cast);
+  --shadow-btn-active: 0 1px 0 0 var(--color-accent-deep), 0 2px 6px -2px var(--color-accent-cast);
+
+  --z-base: 1;
+  --z-raised: 10;
+  --z-dropdown: 100;
+  --z-sticky: 200;
+  --z-modal: 400;
+  --z-toast: 500;
+}
+
+@media (min-width: 40rem) {
+  :root { --page-gutter: var(--space-lg); }
+}
