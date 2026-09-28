@@ -5,14 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="robots" content="noindex">
   <title>Montessori Kaalam · Playa del Carmen</title>
-  <meta name="description" content="Montessori Kaalam, en Playa del Carmen. De los 2 meses a los 12 años. Visitas en hora de trabajo: lunes 11:00 a 14:00, martes a viernes 9:00 a 12:00.">
+  <meta name="description" content="Educación de excelencia, sin sacrificar la infancia. Montessori Kaalam, Playa del Carmen. El niño es visto, respetado y guiado.">
   <link rel="icon" href="images/favicon.png" type="image/png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <meta property="og:title" content="Montessori Kaalam · Playa del Carmen">
-  <meta property="og:description" content="Excelencia, sin perder la infancia. Playa del Carmen.">
+  <meta property="og:description" content="Educación de excelencia, sin sacrificar la infancia. Playa del Carmen.">
   <meta property="og:image" content="images/hero-patio.jpg">
 </head>
 <body>
@@ -27,14 +27,16 @@
         <nav class="nav__links" aria-label="Secciones">
           <a href="#dia" data-i18n="navDay">El día</a>
           <a href="#edades" data-i18n="navAges">Edades</a>
+          <a href="blog.html" data-i18n="navNotes">Notas</a>
         </nav>
         <button class="nav__lang js-lang" type="button" aria-pressed="false">EN</button>
         <button class="nav__toggle" id="menu-btn" type="button" aria-expanded="false" aria-controls="menu">Menú</button>
-        <a class="btn btn--outline btn--sm nav__cta" href="#visita" data-i18n="navVisit">Visita</a>
+        <a class="btn btn--outline btn--sm nav__cta" href="https://montessorikaalam.simplybook.me" target="_blank" rel="noopener" data-i18n="bookShort">Agendar</a>
       </div>
       <div class="nav__panel" id="menu" hidden>
         <a href="#dia" data-i18n="navDay">El día</a>
         <a href="#edades" data-i18n="navAges">Edades</a>
+        <a href="blog.html" data-i18n="navNotes">Notas</a>
         <a href="#visita" data-i18n="navVisit">Visita</a>
         <button class="nav__lang js-lang" type="button" aria-pressed="false">EN</button>
       </div>
@@ -45,8 +47,8 @@
     <section class="section hero">
       <div class="hero__copy">
         <p class="hero__name" data-i18n="heroKicker">Montessori Kaalam · Playa del Carmen</p>
-        <h1 data-i18n="heroH1">Sin perder la infancia.</h1>
-        <p class="prose" data-i18n="heroLede">En Playa del Carmen, un niño puede avanzar tan lejos como pueda, y seguir con ganas de aprender al final del día.</p>
+        <h1 data-i18n="heroH1">Educación de excelencia, sin sacrificar la infancia.</h1>
+        <p class="prose" data-i18n="heroLede">Una escuela donde el niño es visto, respetado y guiado. Puede llegar tan lejos como su capacidad lo lleve, sin techo y sin presión, y sin perder su confianza ni su forma de ser.</p>
         <a class="btn" href="https://montessorikaalam.simplybook.me" target="_blank" rel="noopener" data-i18n="book">Agendar visita</a>
       </div>
       <figure class="hero__frame">
@@ -57,8 +59,8 @@
 
     <section class="section day" id="dia">
       <div class="day__intro">
-        <h2 data-i18n="dayH2">Así se vive una mañana.</h2>
-        <p class="prose" data-i18n="dayLede">Fotos de la escuela. No es un horario inventado: es lo que se ve cuando el día ya empezó.</p>
+        <h2 data-i18n="dayH2">Así se vive Kaalam.</h2>
+        <p class="prose" data-i18n="dayLede">Fotos de la escuela. Se ve cómo tratan al niño, y qué hace cuando el día ya empezó.</p>
       </div>
       <ol class="day__list">
         <li class="stage">
@@ -97,7 +99,7 @@
           </figure>
           <div class="stage__copy">
             <h3 class="stage__title"><span class="stage__num">3.0</span><span class="stage__word" data-i18n="s3h">Cuidan</span></h3>
-            <p class="prose" data-i18n="s3p">Agua, maceta y mesa. El patio es otro ambiente, no el recreo de después.</p>
+            <p class="prose" data-i18n="s3p">Agua, maceta y mesa. El patio es parte del día, no el recreo de después.</p>
           </div>
         </li>
         <li class="stage stage--flip">
@@ -113,14 +115,39 @@
       </ol>
     </section>
 
+    <section class="section" id="ver">
+      <div class="day__intro">
+        <h2 data-i18n="filmH2">Véalo usted.</h2>
+        <p class="prose" data-i18n="filmLede">Dos películas de la escuela. La del Taller termina antes de los créditos.</p>
+      </div>
+      <figure class="film">
+        <video class="film__wide" controls playsinline preload="none" poster="images/poster-taller.jpg">
+          <source src="videos/taller.mp4" type="video/mp4">
+        </video>
+        <figcaption>
+          <strong data-i18n="filmTaller">El Taller</strong>
+          <span data-i18n="filmTallerP">Niños de primaria en la escuela: el salón, el patio, música y baile.</span>
+        </figcaption>
+      </figure>
+      <figure class="film film--portrait">
+        <video class="film__tall" controls playsinline preload="none" poster="images/poster-familias.jpg">
+          <source src="videos/familias.mp4" type="video/mp4">
+        </video>
+        <figcaption>
+          <strong data-i18n="filmFam">Familias</strong>
+          <span data-i18n="filmFamP">Familias de Kaalam, junio de 2024.</span>
+        </figcaption>
+      </figure>
+    </section>
+
     <section class="section section--band datos" id="edades">
       <div>
         <h2 data-i18n="agesH2">Cuatro edades, el mismo cuidado.</h2>
-        <p class="prose" data-i18n="agesLede">De los 2 meses a los 12 años. En Casa de Niños y en Taller, las guías tienen certificación AMI. No todo el equipo la tiene, y lo decimos así.</p>
+        <p class="prose" data-i18n="agesLede">De los 2 meses a los 12 años. En Casa de Niños la guía es Mayo, con certificación AMI. En Taller, Iris, también con certificación AMI. No todo el equipo la tiene. Los materiales son Montessori originales, los grupos son pequeños, y cada niño es observado. Avanza cuando está listo, no cuando lo marca el calendario.</p>
         <dl class="facts">
           <div>
             <dt data-i18n="a1t">Nido</dt>
-            <dd data-i18n="a1d">2 meses a 18 meses. Un lugar cálido para empezar a explorar.</dd>
+            <dd data-i18n="a1d">2 meses a 18 meses. Un lugar cálido y seguro para empezar a explorar con confianza.</dd>
           </div>
           <div>
             <dt data-i18n="a2t">Comunidad infantil</dt>
@@ -128,22 +155,31 @@
           </div>
           <div>
             <dt data-i18n="a3t">Casa de niños</dt>
-            <dd data-i18n="a3d">3 a 6 años. Vida práctica, sensorial, lenguaje, matemáticas y arte, al ritmo de cada niño.</dd>
+            <dd data-i18n="a3d">3 a 6 años. Vida práctica, sensorial, lenguaje, matemáticas y arte. Si va adelante, sigue. No espera a que el grupo lo alcance.</dd>
           </div>
           <div>
             <dt data-i18n="a4t">Taller</dt>
-            <dd data-i18n="a4d">6 a 12 años. En el ciclo nuevo: lunes, miércoles y viernes en español. Martes y jueves en inglés.</dd>
+            <dd data-i18n="a4d">6 a 12 años. Aprendizaje a fondo, pensamiento crítico, proyectos y responsabilidad. En el ciclo nuevo: lunes, miércoles y viernes en español. Martes y jueves en inglés.</dd>
           </div>
         </dl>
-        <p class="prose ages__extra" data-i18n="extra">También hay arte, cocina, inglés, música y yoga. En Taller se suman mandarín, tecnología y taekwondo.</p>
+        <p class="prose ages__extra" data-i18n="extra">También hay arte, cocina, inglés con maestra propia, conciencia del entorno, música y yoga. En Taller se suman mandarín, tecnología, educación financiera, inteligencia emocional, taekwondo y música.</p>
       </div>
+    </section>
+
+    <section class="section" id="notas">
+      <div class="day__intro">
+        <h2 data-i18n="notesH2">Notas</h2>
+        <p class="prose" data-i18n="notesLede">Textos de la escuela, cuando haya algo que contar.</p>
+      </div>
+      <div id="notes-home"></div>
+      <a class="note-more" href="blog.html" data-i18n="notesAll">Todas las notas</a>
     </section>
 
     <section class="section section--band visita" id="visita">
       <div class="visita__grid">
         <div class="visita__copy">
           <h2 data-i18n="visitH2">Venga en hora de trabajo.</h2>
-          <p class="prose" data-i18n="visitLede">La visita es un día real, no un recorrido armado. Lunes de 11:00 a 14:00. Martes a viernes de 9:00 a 12:00.</p>
+          <p class="prose" data-i18n="visitLede">La visita es en hora de trabajo, para ver el día como es. No es un recorrido armado. Lunes de 11:00 a 14:00. Martes a viernes de 9:00 a 12:00. La directora es Doris Mozota.</p>
         </div>
         <div class="visita__actions">
           <a class="btn" href="https://montessorikaalam.simplybook.me" target="_blank" rel="noopener" data-i18n="book">Agendar visita</a>
@@ -162,6 +198,7 @@
       </a>
       <a href="#dia" data-i18n="navDay">El día</a>
       <a href="#edades" data-i18n="navAges">Edades</a>
+      <a href="blog.html" data-i18n="navNotes">Notas</a>
       <a href="#visita" data-i18n="navVisit">Visita</a>
       <a href="https://www.instagram.com/montessorikaalam" target="_blank" rel="noopener">Instagram</a>
       <a href="https://wa.me/529841052595" target="_blank" rel="noopener">WhatsApp</a>
@@ -169,7 +206,10 @@
     </div>
   </footer>
 
+  <a class="btn wa-float" href="https://wa.me/529841052595" target="_blank" rel="noopener">WhatsApp</a>
+
   <script src="config.js"></script>
+  <script src="posts.js"></script>
   <script src="main.js"></script>
 </body>
 </html>

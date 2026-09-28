@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="robots" content="noindex">
+  <title>Notas · Montessori Kaalam</title>
+  <meta name="description" content="Notas de Montessori Kaalam, Playa del Carmen.">
+  <link rel="icon" href="images/favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#contenido" data-i18n="skip">Saltar al contenido</a>
+  <header class="nav" id="nav">
+    <div class="nav__bar">
+      <div class="nav__bar-inner">
+        <a class="brand" href="index.html">
+          <img class="brand__logo" src="images/logo.png" alt="" width="900" height="655">
+          <span class="brand__name">Kaalam</span>
+        </a>
+        <nav class="nav__links" aria-label="Secciones">
+          <a href="index.html#dia" data-i18n="navDay">El día</a>
+          <a href="index.html#edades" data-i18n="navAges">Edades</a>
+          <a href="blog.html" data-i18n="navNotes">Notas</a>
+        </nav>
+        <button class="nav__lang js-lang" type="button" aria-pressed="false">EN</button>
+        <button class="nav__toggle" id="menu-btn" type="button" aria-expanded="false" aria-controls="menu">Menú</button>
+        <a class="btn btn--outline btn--sm nav__cta" href="https://montessorikaalam.simplybook.me" target="_blank" rel="noopener" data-i18n="bookShort">Agendar</a>
+      </div>
+      <div class="nav__panel" id="menu" hidden>
+        <a href="index.html#dia" data-i18n="navDay">El día</a>
+        <a href="index.html#edades" data-i18n="navAges">Edades</a>
+        <a href="blog.html" data-i18n="navNotes">Notas</a>
+        <a href="index.html#visita" data-i18n="navVisit">Visita</a>
+        <button class="nav__lang js-lang" type="button" aria-pressed="false">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="contenido" class="section blog">
+    <p class="hero__name"><a href="blog.html" data-i18n="notesH2">Notas</a></p>
+    <div id="blog-list" class="blog__list"></div>
+    <article id="blog-article" class="blog__article" hidden>
+      <p class="note-link__date" id="blog-kicker"></p>
+      <h1 id="blog-title"></h1>
+      <div class="prose blog__body" id="blog-body"></div>
+      <p><a class="note-more" href="blog.html" data-i18n="notesAll">Todas las notas</a></p>
+    </article>
+  </main>
+
+  <footer class="foot-stmt">
+    <p class="foot-stmt__line" data-i18n="footLine">El ambiente se entiende al pisarlo.</p>
+    <div class="foot-stmt__meta">
+      <a class="brand" href="index.html">
+        <img class="brand__logo" src="images/logo.png" alt="" width="900" height="655">
+        <span class="brand__name">Kaalam</span>
+      </a>
+      <a href="index.html#visita" data-i18n="navVisit">Visita</a>
+      <a href="https://www.instagram.com/montessorikaalam" target="_blank" rel="noopener">Instagram</a>
+      <p class="foot-note" data-i18n="footNote">Organización sin fines de lucro · Playa del Carmen</p>
+    </div>
+  </footer>
+
+  <a class="btn wa-float" href="https://wa.me/529841052595" target="_blank" rel="noopener">WhatsApp</a>
+
+  <script src="config.js"></script>
+  <script src="posts.js"></script>
+  <script src="main.js"></script>
+  <script src="blog.js"></script>
+</body>
+</html>
