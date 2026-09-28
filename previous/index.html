@@ -6,14 +6,14 @@
   <meta name="robots" content="noindex">
   <title>Montessori Kaalam · Playa del Carmen</title>
   <meta name="description" content="Educación de excelencia, sin sacrificar la infancia. Montessori Kaalam, Playa del Carmen. El niño es visto, respetado y guiado.">
-  <link rel="icon" href="images/favicon.png" type="image/png">
+  <link rel="icon" href="../images/favicon.png" type="image/png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <meta property="og:title" content="Montessori Kaalam · Playa del Carmen">
   <meta property="og:description" content="Educación de excelencia, sin sacrificar la infancia. Playa del Carmen.">
-  <meta property="og:url" content="https://chongjames.github.io/escuela-montessori/">
+  <meta property="og:url" content="https://chongjames.github.io/escuela-montessori/previous/">
   <meta property="og:image" content="https://chongjames.github.io/escuela-montessori/images/hero-patio.jpg">
   <meta property="og:image:width" content="896">
   <meta property="og:image:height" content="1600">
@@ -24,7 +24,7 @@
     <div class="nav__bar">
       <div class="nav__bar-inner">
         <a class="brand" href="#contenido">
-          <img class="brand__logo" src="images/mark.png" alt="" width="160" height="155">
+          <img class="brand__logo" src="../images/mark.png" alt="" width="160" height="155">
           <span class="brand__name">Kaalam</span>
         </a>
         <nav class="nav__links" aria-label="Secciones">
@@ -34,7 +34,7 @@
         </nav>
         <button class="nav__lang js-lang" type="button" aria-pressed="false">EN</button>
         <button class="nav__toggle" id="menu-btn" type="button" aria-expanded="false" aria-controls="menu">Menú</button>
-        <a class="btn btn--sm nav__cta" href="https://montessorikaalam.simplybook.me" target="_blank" rel="noopener" data-i18n="bookShort">Agendar</a>
+        <a class="btn btn--outline btn--sm nav__cta" href="https://montessorikaalam.simplybook.me" target="_blank" rel="noopener" data-i18n="bookShort">Agendar</a>
       </div>
       <div class="nav__panel" id="menu" hidden>
         <a href="#dia" data-i18n="navDay">El día</a>
@@ -55,15 +55,10 @@
         <p class="prose" data-i18n="heroChild">Si su hijo es capaz, se aburre en la escuela y ya le dicen que está distraído, el problema puede ser el lugar, no el niño.</p>
         <a class="btn" href="https://montessorikaalam.simplybook.me" target="_blank" rel="noopener" data-i18n="book">Agendar visita</a>
       </div>
-      <div class="hero__scene">
-        <svg class="sprig sprig--hero" viewBox="0 0 48 72" aria-hidden="true">
-          <path fill="currentColor" d="M24 70c1-16 6-28 18-38-8 1-14 6-16 14 6-4 10-10 12-18C28 30 18 44 20 70h4z"/>
-        </svg>
-        <figure class="hero__frame">
-          <img src="images/hero-patio.jpg" alt="Niños trabajando con plantas en el patio arbolado de la escuela." width="896" height="1600" fetchpriority="high">
-          <figcaption data-i18n="heroCap">Patio de la escuela</figcaption>
-        </figure>
-      </div>
+      <figure class="hero__frame">
+        <img src="../images/hero-patio.jpg" alt="Niños trabajando con plantas en el patio arbolado de la escuela." width="896" height="1600" fetchpriority="high">
+        <figcaption data-i18n="heroCap">Patio de la escuela</figcaption>
+      </figure>
     </section>
 
     <section class="section day" id="dia">
@@ -71,57 +66,57 @@
         <h2 data-i18n="dayH2">Así se vive Kaalam.</h2>
         <p class="prose" data-i18n="dayLede">Fotos de la escuela. Se ve cómo tratan al niño, y qué hace cuando el día ya empezó.</p>
       </div>
-      <div class="moments">
-        <article class="moment moment--sky moment--split">
-          <div class="moment__copy">
-            <h3 data-i18n="s1h">Dibujan</h3>
-            <p data-i18n="s1p">Hay pizarra y caballete. Se quedan el tiempo que el dibujo pide.</p>
-          </div>
-          <figure class="moment__photo">
-            <img class="crop-board" src="images/pizarra.jpg" alt="Una niña dibuja una figura con gis en una pizarra verde." width="785" height="1400" loading="lazy">
+      <ol class="day__list">
+        <li class="stage">
+          <figure class="stage__photo">
+            <img src="../images/pizarra.jpg" alt="Una niña dibuja una figura con gis en una pizarra verde." width="785" height="1400" loading="lazy">
             <figcaption data-i18n="s1cap">Pizarra en el patio.</figcaption>
           </figure>
-        </article>
-        <article class="moment moment--coral">
-          <div class="moment__copy">
-            <h3 data-i18n="s2h">Leen</h3>
-            <p data-i18n="s2p">Se investiga con un libro abierto y tiempo para seguir la pregunta.</p>
+          <div class="stage__copy">
+            <h3 class="stage__title" data-i18n="s1h">Dibujan</h3>
+            <p class="prose" data-i18n="s1p">Hay pizarra y caballete. Se quedan el tiempo que el dibujo pide.</p>
           </div>
-          <figure class="moment__photo">
-            <img class="crop-book" src="images/libro.jpg" alt="Una niña señala las fotos de rocas en un libro abierto." width="784" height="1400" loading="lazy">
+        </li>
+        <li class="stage stage--flip">
+          <figure class="stage__photo">
+            <img src="../images/libro.jpg" alt="Una niña señala las fotos de rocas en un libro abierto." width="784" height="1400" loading="lazy">
             <figcaption data-i18n="s2cap">Un libro de verdad, en Taller.</figcaption>
           </figure>
-        </article>
-        <article class="moment moment--sage">
-          <div class="moment__copy">
-            <h3 data-i18n="musicH">También hay música.</h3>
-            <p data-i18n="musicP">La flauta entra en el día. No es un extra del viernes.</p>
+          <div class="stage__copy">
+            <h3 class="stage__title" data-i18n="s2h">Leen</h3>
+            <p class="prose" data-i18n="s2p">Se investiga con un libro abierto y tiempo para seguir la pregunta.</p>
           </div>
-          <figure class="moment__photo">
-            <img class="crop-flute" src="images/flauta.jpg" alt="Una niña toca una flauta dulce sentada en el salón." width="785" height="1400" loading="lazy">
-          </figure>
-        </article>
-        <article class="moment moment--peach">
-          <div class="moment__copy">
-            <h3 data-i18n="s3h">Cuidan</h3>
-            <p data-i18n="s3p">Agua, maceta y mesa. El patio es parte del día, no el recreo de después.</p>
+        </li>
+        <li class="stage stage--aside">
+          <div class="paint">
+            <img src="../images/flauta.jpg" alt="Una niña toca una flauta dulce sentada en el salón." width="785" height="1400" loading="lazy">
+            <div class="paint__copy">
+              <h3 data-i18n="musicH">También hay música.</h3>
+              <p data-i18n="musicP">La flauta entra en el día. No es un extra del viernes.</p>
+            </div>
           </div>
-          <figure class="moment__photo">
-            <img class="crop-plants" src="images/plantas.jpg" alt="Una niña con delantal verde acomoda una planta en el patio." width="785" height="1400" loading="lazy">
+        </li>
+        <li class="stage">
+          <figure class="stage__photo">
+            <img src="../images/plantas.jpg" alt="Una niña con delantal verde acomoda una planta en el patio." width="785" height="1400" loading="lazy">
             <figcaption data-i18n="s3cap">Plantas en el patio.</figcaption>
           </figure>
-        </article>
-        <article class="moment moment--sun moment--split">
-          <div class="moment__copy">
-            <h3 data-i18n="s4h">Salen</h3>
-            <p data-i18n="s4p">Se trabaja afuera con la misma calma que adentro.</p>
+          <div class="stage__copy">
+            <h3 class="stage__title" data-i18n="s3h">Cuidan</h3>
+            <p class="prose" data-i18n="s3p">Agua, maceta y mesa. El patio es parte del día, no el recreo de después.</p>
           </div>
-          <figure class="moment__photo">
-            <img class="crop-easel" src="images/caballete.jpg" alt="Dos niños dibujan en un caballete. La playera de la niña dice Kaalam." width="786" height="1400" loading="lazy">
+        </li>
+        <li class="stage stage--flip">
+          <figure class="stage__photo">
+            <img src="../images/caballete.jpg" alt="Dos niños dibujan en un caballete. La playera de la niña dice Kaalam." width="786" height="1400" loading="lazy">
             <figcaption data-i18n="s4cap">El patio, en hora de trabajo.</figcaption>
           </figure>
-        </article>
-      </div>
+          <div class="stage__copy">
+            <h3 class="stage__title" data-i18n="s4h">Salen</h3>
+            <p class="prose" data-i18n="s4p">Se trabaja afuera con la misma calma que adentro.</p>
+          </div>
+        </li>
+      </ol>
     </section>
 
     <section class="section" id="ver">
@@ -129,10 +124,9 @@
         <h2 data-i18n="filmH2">Véalo usted.</h2>
         <p class="prose" data-i18n="filmLede">Dos películas de la escuela. La del Taller termina antes de los créditos.</p>
       </div>
-      <div class="films">
       <figure class="film">
-        <video class="film__wide" controls playsinline preload="none" poster="images/poster-taller.jpg" width="1280" height="720">
-          <source src="videos/taller.mp4" type="video/mp4">
+        <video class="film__wide" controls playsinline preload="none" poster="../images/poster-taller.jpg" width="1280" height="720">
+          <source src="../videos/taller.mp4" type="video/mp4">
         </video>
         <figcaption>
           <strong data-i18n="filmTaller">El Taller</strong>
@@ -140,39 +134,38 @@
         </figcaption>
       </figure>
       <figure class="film film--portrait">
-        <video class="film__tall" controls playsinline preload="none" poster="images/poster-familias.jpg" width="720" height="1280">
-          <source src="videos/familias.mp4" type="video/mp4">
+        <video class="film__tall" controls playsinline preload="none" poster="../images/poster-familias.jpg" width="720" height="1280">
+          <source src="../videos/familias.mp4" type="video/mp4">
         </video>
         <figcaption>
           <strong data-i18n="filmFam">Familias</strong>
           <span data-i18n="filmFamP">Familias de Kaalam, junio de 2024.</span>
         </figcaption>
       </figure>
-      </div>
     </section>
 
-    <section class="section" id="edades">
+    <section class="section section--band datos" id="edades">
       <div>
         <h2 data-i18n="agesH2">Cuatro edades, el mismo cuidado.</h2>
         <p class="prose" data-i18n="agesLede">De los 2 meses a los 12 años. En Casa de Niños la guía es Mayo, con certificación AMI. En Taller, Iris, también con certificación AMI. No todo el equipo la tiene. Los materiales son Montessori originales, los grupos son pequeños, y cada niño es observado. Avanza cuando está listo, no cuando lo marca el calendario.</p>
-        <div class="ages">
-          <article class="age age--sun">
-            <h3 data-i18n="a1t">Nido</h3>
-            <p data-i18n="a1d">2 meses a 18 meses. Un lugar cálido y seguro para empezar a explorar con confianza.</p>
-          </article>
-          <article class="age age--sky">
-            <h3 data-i18n="a2t">Comunidad infantil</h3>
-            <p data-i18n="a2d">18 meses a 3 años. Autonomía, lenguaje, movimiento y orden.</p>
-          </article>
-          <article class="age age--sage">
-            <h3 data-i18n="a3t">Casa de niños</h3>
-            <p data-i18n="a3d">3 a 6 años. Cuenta, lee, ordena y trabaja con las manos. Si va adelante, sigue. No espera a que el grupo lo alcance.</p>
-          </article>
-          <article class="age age--coral">
-            <h3 data-i18n="a4t">Taller</h3>
-            <p data-i18n="a4d">6 a 12 años. Aprendizaje a fondo, pensamiento crítico, proyectos y responsabilidad. En el ciclo nuevo: lunes, miércoles y viernes en español. Martes y jueves en inglés.</p>
-          </article>
-        </div>
+        <dl class="facts">
+          <div>
+            <dt data-i18n="a1t">Nido</dt>
+            <dd data-i18n="a1d">2 meses a 18 meses. Un lugar cálido y seguro para empezar a explorar con confianza.</dd>
+          </div>
+          <div>
+            <dt data-i18n="a2t">Comunidad infantil</dt>
+            <dd data-i18n="a2d">18 meses a 3 años. Autonomía, lenguaje, movimiento y orden.</dd>
+          </div>
+          <div>
+            <dt data-i18n="a3t">Casa de niños</dt>
+            <dd data-i18n="a3d">3 a 6 años. Cuenta, lee, ordena y trabaja con las manos. Si va adelante, sigue. No espera a que el grupo lo alcance.</dd>
+          </div>
+          <div>
+            <dt data-i18n="a4t">Taller</dt>
+            <dd data-i18n="a4d">6 a 12 años. Aprendizaje a fondo, pensamiento crítico, proyectos y responsabilidad. En el ciclo nuevo: lunes, miércoles y viernes en español. Martes y jueves en inglés.</dd>
+          </div>
+        </dl>
         <p class="prose ages__extra" data-i18n="extra">También hay arte, cocina, inglés con maestra propia, conciencia del entorno, música y yoga. En Taller se suman mandarín, tecnología, educación financiera, inteligencia emocional, taekwondo y música.</p>
       </div>
     </section>
@@ -186,30 +179,15 @@
       <a class="note-more" href="blog.html" data-i18n="notesAll">Todas las notas</a>
     </section>
 
-    <section class="section visita" id="visita">
-      <div class="visita__band">
-        <svg class="visita__sun" viewBox="0 0 64 64" aria-hidden="true">
-          <g fill="currentColor">
-            <circle cx="32" cy="32" r="12"/>
-            <rect x="30" y="2" width="4" height="10" rx="2"/>
-            <rect x="30" y="52" width="4" height="10" rx="2"/>
-            <rect x="2" y="30" width="10" height="4" rx="2"/>
-            <rect x="52" y="30" width="10" height="4" rx="2"/>
-            <rect x="10" y="10" width="4" height="10" rx="2" transform="rotate(-45 12 15)"/>
-            <rect x="50" y="44" width="4" height="10" rx="2" transform="rotate(-45 52 49)"/>
-            <rect x="50" y="10" width="4" height="10" rx="2" transform="rotate(45 52 15)"/>
-            <rect x="10" y="44" width="4" height="10" rx="2" transform="rotate(45 12 49)"/>
-          </g>
-        </svg>
-        <div class="visita__grid">
-          <div class="visita__copy">
-            <h2 data-i18n="visitH2">Venga en hora de trabajo.</h2>
-            <p class="prose" data-i18n="visitLede">La visita es en hora de trabajo, para ver el día como es. No es un recorrido armado. Lunes de 11:00 a 14:00. Martes a viernes de 9:00 a 12:00. La directora es Doris Mozota.</p>
-          </div>
-          <div class="visita__actions">
-            <a class="btn" href="https://montessorikaalam.simplybook.me" target="_blank" rel="noopener" data-i18n="book">Agendar visita</a>
-            <a class="btn btn--outline" href="https://wa.me/529841052595" target="_blank" rel="noopener">WhatsApp</a>
-          </div>
+    <section class="section section--band visita" id="visita">
+      <div class="visita__grid">
+        <div class="visita__copy">
+          <h2 data-i18n="visitH2">Venga en hora de trabajo.</h2>
+          <p class="prose" data-i18n="visitLede">La visita es en hora de trabajo, para ver el día como es. No es un recorrido armado. Lunes de 11:00 a 14:00. Martes a viernes de 9:00 a 12:00. La directora es Doris Mozota.</p>
+        </div>
+        <div class="visita__actions">
+          <a class="btn" href="https://montessorikaalam.simplybook.me" target="_blank" rel="noopener" data-i18n="book">Agendar visita</a>
+          <a class="btn btn--outline" href="https://wa.me/529841052595" target="_blank" rel="noopener">WhatsApp</a>
         </div>
       </div>
     </section>
@@ -219,7 +197,7 @@
     <p class="foot-stmt__line" data-i18n="footLine">El ambiente se entiende al pisarlo.</p>
     <div class="foot-stmt__meta">
       <a class="brand" href="#contenido">
-        <img class="brand__logo" src="images/mark.png" alt="" width="160" height="155">
+        <img class="brand__logo" src="../images/mark.png" alt="" width="160" height="155">
         <span class="brand__name">Kaalam</span>
       </a>
       <a href="#dia" data-i18n="navDay">El día</a>
@@ -228,15 +206,15 @@
       <a href="#visita" data-i18n="navVisit">Visita</a>
       <a href="https://www.instagram.com/montessorikaalam" target="_blank" rel="noopener">Instagram</a>
       <a href="https://wa.me/529841052595" target="_blank" rel="noopener">WhatsApp</a>
-      <a href="previous/index.html" data-i18n="verPrev">Versión anterior</a>
+      <a href="../index.html" data-i18n="verNext">Versión nueva</a>
       <p class="foot-note" data-i18n="footNote">Playa del Carmen</p>
     </div>
   </footer>
 
   <a class="btn wa-float" href="https://wa.me/529841052595" target="_blank" rel="noopener">WhatsApp</a>
 
-  <script src="config.js"></script>
-  <script src="posts.js"></script>
-  <script src="main.js"></script>
+  <script src="../config.js"></script>
+  <script src="../posts.js"></script>
+  <script src="../main.js"></script>
 </body>
 </html>

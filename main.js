@@ -57,6 +57,8 @@
       visitLede: "La visita es en hora de trabajo, para ver el día como es. No es un recorrido armado. Lunes de 11:00 a 14:00. Martes a viernes de 9:00 a 12:00. La directora es Doris Mozota.",
       footLine: "El ambiente se entiende al pisarlo.",
       footNote: "Playa del Carmen",
+      verPrev: "Versión anterior",
+      verNext: "Versión nueva",
     },
     en: {
       title: "Montessori Kaalam · Playa del Carmen",
@@ -115,6 +117,8 @@
       visitLede: "The visit is during a working morning, so you see the day as it is. It is not a staged tour. Monday 11:00 to 14:00. Tuesday to Friday 9:00 to 12:00. The director is Doris Mozota.",
       footLine: "You understand the classroom by standing in it.",
       footNote: "Playa del Carmen",
+      verPrev: "Earlier version",
+      verNext: "Newer version",
     },
   };
 
