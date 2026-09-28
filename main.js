@@ -14,6 +14,7 @@
       heroKicker: "Montessori Kaalam · Playa del Carmen",
       heroH1: "Educación de excelencia, sin sacrificar la infancia.",
       heroLede: "Una escuela donde el niño es visto, respetado y guiado. Puede llegar tan lejos como su capacidad lo lleve, sin techo y sin presión, y sin perder su confianza ni su forma de ser.",
+      heroChild: "Si su hijo es capaz, se aburre en la escuela y ya le dicen que está distraído, el problema puede ser el lugar, no el niño.",
       heroCap: "Patio de la escuela",
       dayH2: "Así se vive Kaalam.",
       dayLede: "Fotos de la escuela. Se ve cómo tratan al niño, y qué hace cuando el día ya empezó.",
@@ -38,7 +39,7 @@
       a2t: "Comunidad infantil",
       a2d: "18 meses a 3 años. Autonomía, lenguaje, movimiento y orden.",
       a3t: "Casa de niños",
-      a3d: "3 a 6 años. Vida práctica, sensorial, lenguaje, matemáticas y arte. Si va adelante, sigue. No espera a que el grupo lo alcance.",
+      a3d: "3 a 6 años. Cuenta, lee, ordena y trabaja con las manos. Si va adelante, sigue. No espera a que el grupo lo alcance.",
       a4t: "Taller",
       a4d: "6 a 12 años. Aprendizaje a fondo, pensamiento crítico, proyectos y responsabilidad. En el ciclo nuevo: lunes, miércoles y viernes en español. Martes y jueves en inglés.",
       extra: "También hay arte, cocina, inglés con maestra propia, conciencia del entorno, música y yoga. En Taller se suman mandarín, tecnología, educación financiera, inteligencia emocional, taekwondo y música.",
@@ -55,7 +56,7 @@
       visitH2: "Venga en hora de trabajo.",
       visitLede: "La visita es en hora de trabajo, para ver el día como es. No es un recorrido armado. Lunes de 11:00 a 14:00. Martes a viernes de 9:00 a 12:00. La directora es Doris Mozota.",
       footLine: "El ambiente se entiende al pisarlo.",
-      footNote: "Organización sin fines de lucro · Playa del Carmen",
+      footNote: "Playa del Carmen",
     },
     en: {
       title: "Montessori Kaalam · Playa del Carmen",
@@ -71,6 +72,7 @@
       heroKicker: "Montessori Kaalam · Playa del Carmen",
       heroH1: "Excellent education, without the price of childhood.",
       heroLede: "A school where each child is seen, respected, and guided. They can go as far as they are able, with no ceiling and no pressure, and without losing their confidence or who they are.",
+      heroChild: "If your child is capable, bored at school, and already being called distracted, the problem may be the place, not the child.",
       heroCap: "The school patio",
       dayH2: "A day at Kaalam.",
       dayLede: "Photographs from the school. You see how a child is treated, and what they are doing once the morning has started.",
@@ -95,7 +97,7 @@
       a2t: "Comunidad infantil",
       a2d: "18 months to 3 years. Autonomy, language, movement, and order.",
       a3t: "Casa de niños",
-      a3d: "3 to 6 years. Practical life, sensorial work, language, math, and art. A child who is ready moves ahead, without waiting for the group.",
+      a3d: "3 to 6 years. They count, read, set things in order, and work with their hands. A child who is ready moves ahead, without waiting for the group.",
       a4t: "Taller",
       a4d: "6 to 12 years. Deep work, critical thinking, projects, and personal responsibility. In the new cycle: Monday, Wednesday, and Friday in Spanish. Tuesday and Thursday in English.",
       extra: "Also offered: art, cooking, English with its own teacher, care for the environment, music, and yoga. Taller adds Mandarin, technology, financial education, emotional intelligence, taekwondo, and music.",
@@ -112,7 +114,7 @@
       visitH2: "Come during a working morning.",
       visitLede: "The visit is during a working morning, so you see the day as it is. It is not a staged tour. Monday 11:00 to 14:00. Tuesday to Friday 9:00 to 12:00. The director is Doris Mozota.",
       footLine: "You understand the classroom by standing in it.",
-      footNote: "A nonprofit · Playa del Carmen",
+      footNote: "Playa del Carmen",
     },
   };
 
@@ -217,4 +219,15 @@
   document.addEventListener("keydown", function (event) {
     if (event.key === "Escape") closeMenu();
   });
+
+  var school = window.ESCUELA || {};
+  function setHrefs(selector, url) {
+    if (!url) return;
+    document.querySelectorAll(selector).forEach(function (link) {
+      link.href = url;
+    });
+  }
+  setHrefs('a[href*="simplybook.me"]', school.visita);
+  setHrefs('a[href*="wa.me"]', school.whatsapp);
+  setHrefs('a[href*="instagram.com/montessori"]', school.instagram);
 })();

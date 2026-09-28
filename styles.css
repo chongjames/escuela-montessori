@@ -205,13 +205,14 @@ a { color: var(--color-accent-2-deep); }
 .nav__bar-inner .brand { flex: 1 1 auto; }
 
 .brand__logo {
-  height: 2.5rem;
-  width: auto;
+  height: 2.25rem;
+  width: 2.25rem;
+  object-fit: contain;
   display: block;
 }
 
 .nav__lang {
-  display: none;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   min-height: var(--control-h);
@@ -228,7 +229,7 @@ a { color: var(--color-accent-2-deep); }
   cursor: pointer;
 }
 
-.nav__panel .nav__lang { display: inline-flex; }
+.nav__panel .nav__lang { display: none; }
 
 .nav__lang:active { transform: translateY(1px); }
 
@@ -439,7 +440,7 @@ a { color: var(--color-accent-2-deep); }
 
 .hero__frame {
   min-width: 0;
-  height: 13rem;
+  height: 22rem;
   border-radius: var(--radius-card);
   overflow: hidden;
   position: relative;
@@ -450,7 +451,7 @@ a { color: var(--color-accent-2-deep); }
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center 38%;
+  object-position: center 50%;
 }
 
 .hero__frame figcaption {
@@ -532,21 +533,9 @@ a { color: var(--color-accent-2-deep); }
 }
 
 .stage__title {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-xs);
+  font-size: var(--text-xl);
   font-style: normal;
 }
-
-.stage__num {
-  font-size: var(--text-stage);
-  font-weight: 600;
-  letter-spacing: -0.04em;
-  line-height: 0.9;
-  color: var(--color-ink);
-}
-
-.stage__word { font-size: var(--text-xl); }
 
 .stage figcaption,
 .paint figcaption {
@@ -639,10 +628,15 @@ a { color: var(--color-accent-2-deep); }
 .film__wide,
 .film__tall {
   width: 100%;
+  height: auto;
   display: block;
   border-radius: var(--radius-card);
   background: var(--color-ink);
 }
+
+.film__wide { aspect-ratio: 16 / 9; }
+
+.film__tall { aspect-ratio: 9 / 16; }
 
 .film--portrait .film__tall {
   width: min(100%, 22rem);
@@ -846,7 +840,7 @@ a { color: var(--color-accent-2-deep); }
 @media (min-width: 40rem) {
   .nav__banner-rest { display: inline; }
   .facts div { grid-template-columns: minmax(0, 12rem) minmax(0, 1fr); }
-  .hero__frame { height: 18rem; }
+  .hero__frame { height: 24rem; }
   .stage__photo img { height: 18rem; }
   .paint { grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr); }
   .paint img { height: 20rem; }
