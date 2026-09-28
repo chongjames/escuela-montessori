@@ -11,6 +11,8 @@
  */
 @import url("tokens.css");
 
+:root { --banner-h: 0px; }
+
 *,
 *::before,
 *::after { box-sizing: border-box; }
@@ -202,6 +204,39 @@ a { color: var(--color-accent-2-deep); }
 
 .nav__bar-inner .brand { flex: 1 1 auto; }
 
+.brand__logo {
+  height: 2.5rem;
+  width: auto;
+  display: block;
+}
+
+.nav__lang {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  min-height: var(--control-h);
+  padding-inline: var(--space-sm);
+  border: 0;
+  border-radius: var(--radius-pill);
+  background: var(--color-clear);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  font-weight: 700;
+  line-height: 1;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.nav__panel .nav__lang { display: inline-flex; }
+
+.nav__lang:active { transform: translateY(1px); }
+
+.nav__lang:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
 .brand__name {
   overflow: hidden;
   text-overflow: ellipsis;
@@ -384,7 +419,7 @@ a { color: var(--color-accent-2-deep); }
 
 .hero h1 {
   font-size: var(--text-display);
-  max-width: 12ch;
+  max-width: 16ch;
 }
 
 .hero .prose { color: var(--color-ink-soft); }
@@ -402,6 +437,7 @@ a { color: var(--color-accent-2-deep); }
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center 38%;
 }
 
 .hero__frame figcaption {
@@ -470,8 +506,9 @@ a { color: var(--color-accent-2-deep); }
 
 .stage__photo img {
   width: 100%;
-  height: 16rem;
+  height: 20rem;
   object-fit: cover;
+  object-position: center 30%;
 }
 
 .stage__copy {
@@ -520,6 +557,7 @@ a { color: var(--color-accent-2-deep); }
   width: 100%;
   height: 22rem;
   object-fit: cover;
+  object-position: center 30%;
   border-radius: calc(var(--radius-card) - var(--space-xs));
 }
 
@@ -539,7 +577,7 @@ a { color: var(--color-accent-2-deep); }
 
 .facts div {
   display: grid;
-  grid-template-columns: minmax(0, 7.5rem) minmax(0, 1fr);
+  grid-template-columns: minmax(0, 1fr);
   gap: var(--space-md);
   align-items: baseline;
   padding-block: var(--space-md);
@@ -558,7 +596,16 @@ a { color: var(--color-accent-2-deep); }
   font-weight: 600;
 }
 
+.ages__extra { margin-top: var(--space-lg); }
+
 .visita { background: var(--color-paper-coral); }
+
+.visita__actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-md);
+}
 
 .visita__grid {
   display: grid;
@@ -704,6 +751,7 @@ a { color: var(--color-accent-2-deep); }
 
 @media (min-width: 40rem) {
   .nav__banner-rest { display: inline; }
+  .facts div { grid-template-columns: minmax(0, 12rem) minmax(0, 1fr); }
   .hero__frame { height: 18rem; }
   .stage__photo img { height: 18rem; }
   .paint { grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr); }
@@ -711,6 +759,7 @@ a { color: var(--color-accent-2-deep); }
 }
 
 @media (min-width: 60rem) {
+  .nav__bar .nav__lang { display: inline-flex; }
   .nav__links { display: flex; }
   .nav__toggle,
   .nav__panel { display: none; }

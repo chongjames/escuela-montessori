@@ -4,45 +4,39 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="robots" content="noindex">
-  <title>Nombre de la escuela · Montessori</title>
-  <meta name="description" content="Borrador del sitio de una escuela Montessori. Vengan a ver el trabajo. Nombre, horario y fotos todavía provisionales.">
-  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <title>Montessori Kaalam · Playa del Carmen</title>
+  <meta name="description" content="Montessori Kaalam, en Playa del Carmen. De los 2 meses a los 12 años. Visitas en hora de trabajo: lunes 11:00 a 14:00, martes a viernes 9:00 a 12:00.">
+  <link rel="icon" href="images/favicon.png" type="image/png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <meta property="og:title" content="Nombre de la escuela · Montessori">
-  <meta property="og:description" content="Vengan a ver el trabajo. Borrador con fotos provisionales.">
-  <meta property="og:image" content="images/hero-jardin.jpg">
+  <meta property="og:title" content="Montessori Kaalam · Playa del Carmen">
+  <meta property="og:description" content="Excelencia, sin perder la infancia. Playa del Carmen.">
+  <meta property="og:image" content="images/hero-patio.jpg">
 </head>
 <body>
-  <a class="skip" href="#contenido">Saltar al contenido</a>
+  <a class="skip" href="#contenido" data-i18n="skip">Saltar al contenido</a>
   <header class="nav" id="nav">
-    <div class="nav__banner" id="banner">
-      <p class="nav__banner-text">
-        <span class="nav__kicker">Borrador</span>
-        <span class="nav__banner-rest">Fotos y datos provisionales.</span>
-        <a href="#datos">Ver datos</a>
-      </p>
-      <button class="nav__x" id="banner-x" type="button" aria-label="Cerrar aviso">×</button>
-    </div>
     <div class="nav__bar">
       <div class="nav__bar-inner">
         <a class="brand" href="#contenido">
-          <span class="sun" aria-hidden="true"></span>
-          <span class="brand__name" data-fill="nombre">Nombre de la escuela</span>
+          <img class="brand__logo" src="images/logo.png" alt="" width="900" height="655">
+          <span class="brand__name">Kaalam</span>
         </a>
         <nav class="nav__links" aria-label="Secciones">
-          <a href="#dia">El día</a>
-          <a href="#datos">Datos</a>
+          <a href="#dia" data-i18n="navDay">El día</a>
+          <a href="#edades" data-i18n="navAges">Edades</a>
         </nav>
+        <button class="nav__lang js-lang" type="button" aria-pressed="false">EN</button>
         <button class="nav__toggle" id="menu-btn" type="button" aria-expanded="false" aria-controls="menu">Menú</button>
-        <a class="btn btn--outline btn--sm nav__cta" href="#visita">Visita</a>
+        <a class="btn btn--outline btn--sm nav__cta" href="#visita" data-i18n="navVisit">Visita</a>
       </div>
       <div class="nav__panel" id="menu" hidden>
-        <a href="#dia">El día</a>
-        <a href="#datos">Datos</a>
-        <a href="#visita">Visita</a>
+        <a href="#dia" data-i18n="navDay">El día</a>
+        <a href="#edades" data-i18n="navAges">Edades</a>
+        <a href="#visita" data-i18n="navVisit">Visita</a>
+        <button class="nav__lang js-lang" type="button" aria-pressed="false">EN</button>
       </div>
     </div>
   </header>
@@ -50,142 +44,128 @@
   <main id="contenido">
     <section class="section hero">
       <div class="hero__copy">
-        <p class="hero__name" data-fill="nombre">Nombre de la escuela</p>
-        <h1>Vengan a ver el trabajo.</h1>
-        <p class="prose">Los niños eligen el material, cuidan el ambiente y salen al jardín. Con una mañana de visita se entiende.</p>
-        <a class="btn" href="#visita">Agendar visita</a>
+        <p class="hero__name" data-i18n="heroKicker">Montessori Kaalam · Playa del Carmen</p>
+        <h1 data-i18n="heroH1">Sin perder la infancia.</h1>
+        <p class="prose" data-i18n="heroLede">En Playa del Carmen, un niño puede avanzar tan lejos como pueda, y seguir con ganas de aprender al final del día.</p>
+        <a class="btn" href="https://montessorikaalam.simplybook.me" target="_blank" rel="noopener" data-i18n="book">Agendar visita</a>
       </div>
       <figure class="hero__frame">
-        <img src="images/hero-jardin.jpg" alt="Niños corriendo entre árboles de naranja y buganvilia. Fotografía provisional, no es del plantel." width="1600" height="900" fetchpriority="high">
-        <figcaption>Foto provisional</figcaption>
+        <img src="images/hero-patio.jpg" alt="Niños trabajando con plantas en el patio arbolado de la escuela." width="896" height="1600" fetchpriority="high">
+        <figcaption data-i18n="heroCap">Patio de la escuela</figcaption>
       </figure>
     </section>
 
     <section class="section day" id="dia">
       <div class="day__intro">
-        <h2>Así se mueve una mañana.</h2>
-        <p class="prose">Cuatro momentos de un ambiente Montessori. El horario real de esta escuela se anota cuando lo confirmen.</p>
+        <h2 data-i18n="dayH2">Así se vive una mañana.</h2>
+        <p class="prose" data-i18n="dayLede">Fotos de la escuela. No es un horario inventado: es lo que se ve cuando el día ya empezó.</p>
       </div>
       <ol class="day__list">
         <li class="stage">
           <figure class="stage__photo">
-            <img src="images/lectura-tapete.jpg" alt="Dos niños en un tapete, mirando un libro de estampas." width="1200" height="900" loading="lazy">
-            <figcaption>Eligen por dónde empezar.</figcaption>
+            <img src="images/pizarra.jpg" alt="Una niña dibuja una figura con gis en una pizarra verde." width="785" height="1400" loading="lazy">
+            <figcaption data-i18n="s1cap">Pizarra en el patio.</figcaption>
           </figure>
           <div class="stage__copy">
-            <h3 class="stage__title"><span class="stage__num">1.0</span><span class="stage__word">Llegan</span></h3>
-            <p class="prose">Saludan y escogen el primer trabajo. No hay una fila esperándolos en la puerta.</p>
+            <h3 class="stage__title"><span class="stage__num">1.0</span><span class="stage__word" data-i18n="s1h">Dibujan</span></h3>
+            <p class="prose" data-i18n="s1p">Hay pizarra y caballete. Se quedan el tiempo que el dibujo pide.</p>
           </div>
         </li>
         <li class="stage stage--flip">
           <figure class="stage__photo">
-            <img src="images/trabajo-agua.jpg" alt="Una niña vierte agua de una jarra de vidrio a un vaso, en una mesa baja." width="1200" height="900" loading="lazy">
-            <figcaption>Verter, repetir, devolver el material.</figcaption>
+            <img src="images/libro.jpg" alt="Una niña señala las fotos de rocas en un libro abierto." width="784" height="1400" loading="lazy">
+            <figcaption data-i18n="s2cap">Un libro de verdad, en Taller.</figcaption>
           </figure>
           <div class="stage__copy">
-            <h3 class="stage__title"><span class="stage__num">2.0</span><span class="stage__word">Trabajan</span></h3>
-            <p class="prose">El ciclo es largo a propósito. Hay tiempo de concentrarse, equivocarse y volver a empezar.</p>
+            <h3 class="stage__title"><span class="stage__num">2.0</span><span class="stage__word" data-i18n="s2h">Leen</span></h3>
+            <p class="prose" data-i18n="s2p">Se investiga con un libro abierto y tiempo para seguir la pregunta.</p>
           </div>
         </li>
         <li class="stage stage--aside">
           <div class="paint">
-            <img src="images/pintura-caballete.jpg" alt="Un niño pinta amarillo y verde en un caballete de madera." width="900" height="1200" loading="lazy">
+            <img src="images/flauta.jpg" alt="Una niña toca una flauta dulce sentada en el salón." width="785" height="1400" loading="lazy">
             <div class="paint__copy">
-              <h3>Pintar también es trabajo.</h3>
-              <p>El caballete está a su altura. El delantal se mancha. Eso entra en la mañana, no es un extra del viernes.</p>
+              <h3 data-i18n="musicH">También hay música.</h3>
+              <p data-i18n="musicP">La flauta entra en el día. No es un extra del viernes.</p>
             </div>
           </div>
         </li>
         <li class="stage">
           <figure class="stage__photo">
-            <img src="images/fruta-manana.jpg" alt="Dos niños con delantal acomodan naranja y plátano en tazones." width="1200" height="900" loading="lazy">
-            <figcaption>La comida se prepara, no solo se sirve.</figcaption>
+            <img src="images/plantas.jpg" alt="Una niña con delantal verde acomoda una planta en el patio." width="785" height="1400" loading="lazy">
+            <figcaption data-i18n="s3cap">Plantas en el patio.</figcaption>
           </figure>
           <div class="stage__copy">
-            <h3 class="stage__title"><span class="stage__num">3.0</span><span class="stage__word">Comen</span></h3>
-            <p class="prose">Ponen la mesa, parten la fruta y lavan lo que usaron. La cocina es otro trabajo, con las manos.</p>
+            <h3 class="stage__title"><span class="stage__num">3.0</span><span class="stage__word" data-i18n="s3h">Cuidan</span></h3>
+            <p class="prose" data-i18n="s3p">Agua, maceta y mesa. El patio es otro ambiente, no el recreo de después.</p>
           </div>
         </li>
         <li class="stage stage--flip">
           <figure class="stage__photo">
-            <img src="images/jardin-maceta.jpg" alt="Manos de niños junto a una maceta, mientras otra niña riega en el patio." width="1200" height="900" loading="lazy">
-            <figcaption>Regar, correr, volver.</figcaption>
+            <img src="images/caballete.jpg" alt="Dos niños dibujan en un caballete. La playera de la niña dice Kaalam." width="786" height="1400" loading="lazy">
+            <figcaption data-i18n="s4cap">El patio, en hora de trabajo.</figcaption>
           </figure>
           <div class="stage__copy">
-            <h3 class="stage__title"><span class="stage__num">4.0</span><span class="stage__word">Salen</span></h3>
-            <p class="prose">El jardín también es ambiente. Se riega, se corre, y se regresa cuando el cuerpo ya se movió.</p>
+            <h3 class="stage__title"><span class="stage__num">4.0</span><span class="stage__word" data-i18n="s4h">Salen</span></h3>
+            <p class="prose" data-i18n="s4p">Se trabaja afuera con la misma calma que adentro.</p>
           </div>
         </li>
       </ol>
     </section>
 
-    <section class="section section--band datos" id="datos">
+    <section class="section section--band datos" id="edades">
       <div>
-        <h2>Lo que falta confirmar.</h2>
-        <p class="prose">Estos renglones no son datos de la escuela. Están vacíos a propósito, para no inventar horario, edades ni dirección.</p>
+        <h2 data-i18n="agesH2">Cuatro edades, el mismo cuidado.</h2>
+        <p class="prose" data-i18n="agesLede">De los 2 meses a los 12 años. En Casa de Niños y en Taller, las guías tienen certificación AMI. No todo el equipo la tiene, y lo decimos así.</p>
         <dl class="facts">
           <div>
-            <dt>Ciudad</dt>
-            <dd data-fill="ciudad">Ciudad, México</dd>
+            <dt data-i18n="a1t">Nido</dt>
+            <dd data-i18n="a1d">2 meses a 18 meses. Un lugar cálido para empezar a explorar.</dd>
           </div>
           <div>
-            <dt>Edades</dt>
-            <dd data-fill="edades">Por confirmar</dd>
+            <dt data-i18n="a2t">Comunidad infantil</dt>
+            <dd data-i18n="a2d">18 meses a 3 años. Autonomía, lenguaje, movimiento y orden.</dd>
           </div>
           <div>
-            <dt>Horario</dt>
-            <dd data-fill="horario">Por confirmar</dd>
+            <dt data-i18n="a3t">Casa de niños</dt>
+            <dd data-i18n="a3d">3 a 6 años. Vida práctica, sensorial, lenguaje, matemáticas y arte, al ritmo de cada niño.</dd>
           </div>
           <div>
-            <dt>Guías</dt>
-            <dd data-fill="guias">Por confirmar</dd>
-          </div>
-          <div>
-            <dt>Teléfono</dt>
-            <dd data-fill="telefono">Por confirmar</dd>
-          </div>
-          <div>
-            <dt>Correo</dt>
-            <dd data-fill="correo">Por confirmar</dd>
+            <dt data-i18n="a4t">Taller</dt>
+            <dd data-i18n="a4d">6 a 12 años. En el ciclo nuevo: lunes, miércoles y viernes en español. Martes y jueves en inglés.</dd>
           </div>
         </dl>
+        <p class="prose ages__extra" data-i18n="extra">También hay arte, cocina, inglés, música y yoga. En Taller se suman mandarín, tecnología y taekwondo.</p>
       </div>
     </section>
 
     <section class="section section--band visita" id="visita">
       <div class="visita__grid">
         <div class="visita__copy">
-          <h2>Pida la visita.</h2>
-          <p class="prose">Una mañana en el ambiente dice más que esta página. Deje su nombre y un teléfono.</p>
+          <h2 data-i18n="visitH2">Venga en hora de trabajo.</h2>
+          <p class="prose" data-i18n="visitLede">La visita es un día real, no un recorrido armado. Lunes de 11:00 a 14:00. Martes a viernes de 9:00 a 12:00.</p>
         </div>
-        <form class="form" id="visita-form" novalidate>
-          <label class="field">
-            <span>Su nombre</span>
-            <input name="nombre" autocomplete="name" required>
-          </label>
-          <label class="field">
-            <span>Teléfono</span>
-            <input name="telefono" type="tel" autocomplete="tel" required>
-          </label>
-          <label class="field">
-            <span>Edad del niño y qué mañana les queda</span>
-            <textarea name="nota"></textarea>
-          </label>
-          <p class="form__note" id="form-note">Hoy esta solicitud no se envía sola. Cuando el correo de la escuela esté escrito, se abre en su programa de correo.</p>
-          <button class="btn" id="form-submit" type="submit">Agendar visita</button>
-        </form>
+        <div class="visita__actions">
+          <a class="btn" href="https://montessorikaalam.simplybook.me" target="_blank" rel="noopener" data-i18n="book">Agendar visita</a>
+          <a class="btn btn--outline" href="https://wa.me/529841052595" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="foot-stmt">
-    <p class="foot-stmt__line">El ambiente se entiende al pisarlo.</p>
+    <p class="foot-stmt__line" data-i18n="footLine">El ambiente se entiende al pisarlo.</p>
     <div class="foot-stmt__meta">
-      <span class="brand" data-fill="nombre">Nombre de la escuela</span>
-      <a href="#dia">El día</a>
-      <a href="#datos">Datos</a>
-      <a href="#visita">Visita</a>
-      <p class="foot-note">Borrador 2026. Las fotografías son provisionales y no muestran a los niños de la escuela. <span data-fill="ciudad">Ciudad, México</span>.</p>
+      <a class="brand" href="#contenido">
+        <img class="brand__logo" src="images/logo.png" alt="" width="900" height="655">
+        <span class="brand__name">Kaalam</span>
+      </a>
+      <a href="#dia" data-i18n="navDay">El día</a>
+      <a href="#edades" data-i18n="navAges">Edades</a>
+      <a href="#visita" data-i18n="navVisit">Visita</a>
+      <a href="https://www.instagram.com/montessorikaalam" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://wa.me/529841052595" target="_blank" rel="noopener">WhatsApp</a>
+      <p class="foot-note" data-i18n="footNote">Organización sin fines de lucro · Playa del Carmen</p>
     </div>
   </footer>
 

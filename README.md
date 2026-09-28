@@ -1,17 +1,11 @@
-# Borrador · escuela Montessori
+# Montessori Kaalam
 
-Página de muestra para enseñar una dirección visual. El nombre, la ciudad, el horario y las fotos son provisionales.
+Sitio de la escuela en Playa del Carmen. Español por defecto, con botón EN.
 
-## Cambiar el nombre y los datos
+Los datos públicos (edades, horario de visita, reserva, WhatsApp, Instagram) salen del brief del 27 de septiembre de 2026. Las fotos son del folder de la escuela.
 
-Edite `config.js` y recargue la página. Lo que siga diciendo «Por confirmar» se muestra en azul, para que se note que falta.
+La reserva abre [montessorikaalam.simplybook.me](https://montessorikaalam.simplybook.me). WhatsApp: +52 984 105 2595.
 
-Cuando `correo` sea una dirección real, el botón de visita abre el programa de correo con el mensaje armado.
+## Verla
 
-## Cambiar las fotos
-
-Sustituya los archivos en `images/` (mismos nombres) con fotos del plantel. Las de ahora son generadas y no muestran a los niños de la escuela.
-
-## Verla en local
-
-Abra `index.html` en el navegador.
+https://chongjames.github.io/escuela-montessori/
